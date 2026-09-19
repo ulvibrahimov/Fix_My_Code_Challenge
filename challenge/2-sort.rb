@@ -2,12 +2,12 @@
 
 result = []
 ARGV.each do |arg|
-    # skip if not integer
+    # Skip if not integer
     next if arg !~ /^-?[0-9]+$/
     
     i_arg = arg.to_i
     
-    # insert i_arg at the right position
+    # Insert i_arg at the right position
     is_inserted = false
     i = 0
     l = result.length
