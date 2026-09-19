@@ -1,5 +1,4 @@
 #ifndef LISTS_H
-#ifndef LISTS_H
 #define LISTS_H
 
 #include <stdio.h>
@@ -25,4 +24,4 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n);
 void free_dlistint(dlistint_t *head);
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
 
-#endif
+#endif /* LISTS_H */
