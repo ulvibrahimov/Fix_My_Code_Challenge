@@ -8,9 +8,6 @@ import sys
 def fizzbuzz(n):
     """
     Prints numbers from 1 to n separated by space.
-    - 3 and 5 multiples: FizzBuzz
-    - 3 multiples: Fizz
-    - 5 multiples: Buzz
     """
     if n < 1:
         return
