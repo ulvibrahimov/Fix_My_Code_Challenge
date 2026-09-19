@@ -1,28 +1,31 @@
 #!/usr/bin/python3
 """
-FizzBuzz module
+FizzBuzz implementation
 """
 import sys
 
 
 def fizzbuzz(n):
     """
-    FizzBuzz function prints numbers 1 to n separated by space
+    Prints numbers from 1 to n separated by space.
+    - 3 and 5 multiples: FizzBuzz
+    - 3 multiples: Fizz
+    - 5 multiples: Buzz
     """
     if n < 1:
         return
 
-    res = []
+    result = []
     for i in range(1, n + 1):
         if i % 3 == 0 and i % 5 == 0:
-            res.append("FizzBuzz")
+            result.append("FizzBuzz")
         elif i % 3 == 0:
-            res.append("Fizz")
+            result.append("Fizz")
         elif i % 5 == 0:
-            res.append("Buzz")
+            result.append("Buzz")
         else:
-            res.append(str(i))
-    print(" ".join(res))
+            result.append(str(i))
+    print(" ".join(result))
 
 
 if __name__ == "__main__":
